@@ -1,0 +1,49 @@
+.bottom-right{
+  width: 20%;
+  position: fixed;  /* 画面に固定 */
+  right: 0;
+  bottom: 0;
+  z-index: 1000; /* 他の画像よりも前に */
+  height: auto;
+  margin: 40px; /* 隣の画像との隙間を調節(右斜め下に動く)*/
+  padding: 90px; /* 内側に空白を作る(左斜め上に動く)*/
+}
+
+.Title{
+  width: 50%;
+  font-size: 50px;
+}
+
+.name{
+  width: 28%;
+  font-size: 28px;
+}
+
+.main-text{
+  width: 100%;
+  font-size: 18px;
+}
+
+.bottom-center{
+  width: 10%;
+  position: fixed;  /* 画面に固定 */
+  right: 0;
+  bottom: 0;
+  z-index: 1000; /* 他の画像よりも前に */
+  height: auto;
+  margin: 80px; /* 隣の画像との隙間を調節(右斜め下に動く)*/
+  padding: 250px; /* 内側に空白を作る(左斜め上に動く)*/
+}
+
+.self-picture{
+  width: 9%;
+  position: fixed;  /* 画面に固定 */
+  top: 0; /* 上端に配置 */
+  right: 0; /* 右端に配置 */
+  z-index: 1000; 
+  height: auto;
+  text-align:right80;
+  margin: 160px; /* 隣の画像との隙間を調節(右斜め下に動く)*/
+  padding: 200px; /* 内側に空白を作る(左斜め上に動く)*/
+}
+
