@@ -1,12 +1,12 @@
 .bottom-right{
   width: 20%;
-  position: fixed;  /* 画面に固定 */
+  position: fixed; 
   right: 0;
   bottom: 0;
-  z-index: 1000; /* 他の画像よりも前に */
+  z-index: 1000;
   height: auto;
-  margin: 40px; /* 隣の画像との隙間を調節(右斜め下に動く)*/
-  padding: 90px; /* 内側に空白を作る(左斜め上に動く)*/
+  margin: 40px; 
+  padding: 90px;
 }
 
 .title{
@@ -38,13 +38,13 @@
 .self-picture{
   width: 9%;
   position: fixed;  
-  top: 0; /* 上端に配置 */
-  right: 0; /* 右端に配置 */
+  top: 0; 
+  right: 0; 
   z-index: 1000; 
   height: auto;
   text-align:right80;
-  margin: 160px; 
-  padding: 200px; 
+  margin: 140px; 
+  padding: 180px; 
 }
 
 .background{
@@ -53,4 +53,11 @@
   margin:10px; 
   font-size: 100%; 
   padding: 20px;"
+}
+
+.page-content{
+  padding: 10px; 
+  margin-bottom: 10px; 
+  border: 5px double #22b7f3; 
+  border-radius: 10px;
 }
