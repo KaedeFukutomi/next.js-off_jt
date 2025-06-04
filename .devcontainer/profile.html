@@ -6,36 +6,50 @@
     <meta charset="UTF-8" />
     <title>自己紹介ページ</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- 画面縮小時に正しいレイアウトにする -->
-     <link rel="stylesheet" href="profile.css">
-     <!-- 紐付けるcssをここで指定 -->
+    <link rel="stylesheet" href="profile.css">
+    <!-- 紐付けるcssをここで指定 -->
   </head>
 
   <body>
-  <div style="padding: 10px; margin-bottom: 10px; border: 5px double #22b7f3; border-radius: 10px;">
-    <h1 class="Title">自己紹介 </h1>
-    <!-- classタグは存在しないので注意 -->
-    <h2 class="name">福冨楓</h2>
-    <div style="background: #fceff2; box-shadow: #fceff2 0 0 10px 10px; margin:10px; font-size: 100%; padding: 20px;">
+    <div style="padding: 10px; margin-bottom: 10px; border: 5px double #22b7f3; border-radius: 10px;">
 
-    <!-- 画像の配置はCSSを用いて変更する -->
-    <img src="France.jpg" alt="フランス" class="bottom-right" width="200" height="270" >
+      <h1 class="title">自己紹介 </h1>
+      
+      <h2 class="name">福冨楓</h2>
 
-    <img src="cafe.jpg" alt="カフェ" class="bottom-center" width="150" height="400">
+        <div class="background">
 
-    <img src="kaede.jpg" alt="楓" class="self-picture" width="130" height="300">
-    <!-- 画像にクラスを付けることでcssを適用できるようにする -->
+          <span class="photo">
+          <!-- spanを親要素として使うことで、画像をグループ化することができる -->
+          <!-- 画像にクラスを付けることでcssを適用できるようにする -->
+            <img src="France.jpg" alt="フランス・パリのエッフェル塔の写真" class="bottom-right" width="200" height="270" >
+
+            <img src="cafe.jpg" alt="カフェの写真" class="bottom-center" width="150" height="400">
+
+            <img src="kaede.jpg" alt="紹介者の写真" class="self-picture" width="130" height="300">
+            
+          </span>
+
+          <div class="main-text"></div>
   
-    <p class="main-text">生年月日 : 2002年10月21日</p>
+            <p>生年月日 : 2002年10月21日</p>
 
-    <p class="main-text">趣味 : 読書・カフェ巡り・散歩・旅行</p>
+            <p>趣味 : 読書・カフェ巡り・散歩・旅行</p>
 
-    <p class="main-text">好きな映画 : JOHNWICK・プラダを着た悪魔</p>
+            <p>好きな映画 : JOHNWICK・プラダを着た悪魔</p>
 
-    <p class="main-text">Starbucksで好きなメニュー : キャラメルマキアート</p>
+            <p>Starbucksで好きなメニュー : キャラメルマキアート</p>
 
-    <p class="main-text">最近読んで面白かった本 : 流浪の月</p>
+            <p>最近読んで面白かった本 : 流浪の月</p>
+
+          </div>
+
+        </div>
+
+      </div>
 
     </div>
-  </div>
+
+  </body>
+
 </html>
