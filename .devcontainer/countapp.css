@@ -1,0 +1,29 @@
+.button1{
+  color:red;
+  width:400px;
+  height:150px;
+  font-size:50px;
+  display: block;
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.button2{
+  color:blue;
+  width:400px;
+  height:150px;
+  font-size:50px;
+  display: block;
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.button{
+  text-align: center; 
+}
+
+.number{
+  font-size:50px;
+  display: block;
+  text-align:center;
+}
