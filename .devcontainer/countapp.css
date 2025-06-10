@@ -1,24 +1,22 @@
-.button1{
+.increasebutton{
   color:red;
   width:400px;
   height:150px;
   font-size:50px;
-  display: block;
   margin: 0 10px;
   display: inline-block;
 }
 
-.button2{
+.decreasebutton{
   color:blue;
   width:400px;
   height:150px;
   font-size:50px;
-  display: block;
   margin: 0 10px;
   display: inline-block;
 }
 
-.button{
+.allbutton{
   text-align: center; 
 }
 

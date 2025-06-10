@@ -3,12 +3,14 @@ const counterElement = document.getElementById("counter");
 const increaseButton = document.getElementById("increase");
 const decreaseButton = document.getElementById("decrease");
 
-increaseButton.addEventListener("click", () => {
-  count++;
+const increaseCounter = (change) => {
+  count += change;
   counterElement.textContent = count;
-});
+};
 
-decreaseButton.addEventListener("click", () => {
-  count--;
+const decreaseCounter = (change) => {
+  count -= change;
   counterElement.textContent = count;
-});
+};
+increaseButton.addEventListener("click", () => increaseCounter(1));
+decreaseButton.addEventListener("click", () => decreaseCounter(-1));

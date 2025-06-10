@@ -5,12 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const result = document.getElementById("resultMessage");
 
   button.addEventListener("click", () => {
-    const name = input.ariaValueMax.trim();
-
+    // const name = input.value.trim();
+    result.classList.toggle("hidden");
     alert("こんにちは${myName}さん！");
   });
-
-  // if (value === "") {
-  //   console.log("こんにちは${myName}さん！");
-  // }
 });
