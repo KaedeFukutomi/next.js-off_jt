@@ -1,0 +1,21 @@
+.flexbox {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+.job-select {
+  height: 25px;
+}
+.introduction {
+  height: 60px;
+}
+.submit-button {
+  margin-top: 20px;
+  color: blue;
+}
+.error-message {
+  color: red;
+  font-size: 10px;
+  display: none;
+}
+
