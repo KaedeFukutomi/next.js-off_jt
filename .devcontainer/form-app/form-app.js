@@ -1,6 +1,7 @@
 const form = document.getElementById("surveyForm");
 const username = document.getElementById("username");
 const age = document.getElementById("age");
+const ageValue = Number.parseInt(age.value, 10);
 const job = document.getElementById("job");
 const introduction = document.getElementById("introduction");
 const result = document.getElementById("result");
@@ -15,16 +16,12 @@ form.addEventListener("submit", (event) => {
   let hasError = false;
 
   if (username.value.trim() === "") {
-    document.getElementById("error-username").style.display = "block";
+    document.getElementById("error-username").classList.toggle("hidden");
+    style.display = "block";
     hasError = true;
   }
 
-  if (age.value.trim() === "") {
-    document.getElementById("error-age").style.display = "block";
-    hasError = true;
-  }
-
-  if (age.value > 18) {
+  if (age.value.trim() === "" || Number.isNaN(ageValue) || ageValue > 18) {
     document.getElementById("error-age").style.display = "block";
     hasError = true;
   }

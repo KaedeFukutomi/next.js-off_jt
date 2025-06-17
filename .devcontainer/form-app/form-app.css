@@ -18,4 +18,6 @@
   font-size: 10px;
   display: none;
 }
-
+.hidden{
+  display:none;
+}
