@@ -2,6 +2,7 @@ const apiUrl = "https://jsonplaceholder.typicode.com/users";
 
 // ユーザーリストを表示する要素
 const userList = document.getElementById("user-list");
+const statusText = document.getElementById("status");
 
 // Fetch APIを使用してデータを取得
 fetch(apiUrl)
@@ -11,13 +12,13 @@ fetch(apiUrl)
     }
     return response.json();
   })
-  .then((data) => {
-    // データを取得して表示
-    userList.innerHTML = ""; // ローディングメッセージを削除
-    for (const user of data) {
+  .then((users) => {
+    statusText.style.display = "none";
+    userList.innerHTML = "";
+    for (const user of users) {
       const listItem = document.createElement("li");
-      listItem.textContent = "${user.name}";
-      userList.appendChild(li);
+      listItem.textContent = user.name;
+      userList.appendChild(listItem);
     }
   })
 
