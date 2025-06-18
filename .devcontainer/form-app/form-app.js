@@ -16,8 +16,7 @@ form.addEventListener("submit", (event) => {
   let hasError = false;
 
   if (username.value.trim() === "") {
-    document.getElementById("error-username").classList.toggle("hidden");
-    style.display = "block";
+    document.getElementById("error-username").style.display = "block";
     hasError = true;
   }
 
