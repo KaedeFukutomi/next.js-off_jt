@@ -20,7 +20,7 @@ form.addEventListener("submit", (event) => {
     hasError = true;
   }
 
-  if (age.value.trim() === "" || Number.isNaN(ageValue) || ageValue > 18) {
+  if (age.value.trim() === "" || ageValue >= 18) {
     document.getElementById("error-age").style.display = "block";
     hasError = true;
   }
