@@ -1,10 +1,7 @@
 const apiUrl = "https://jsonplaceholder.typicode.com/users";
-
-// ユーザーリストを表示する要素
 const userList = document.getElementById("user-list");
 const statusText = document.getElementById("status");
 
-// Fetch APIを使用してデータを取得
 fetch(apiUrl)
   .then((response) => {
     if (!response.ok) {

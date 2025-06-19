@@ -1,7 +1,7 @@
 const form = document.getElementById("surveyForm");
 const username = document.getElementById("username");
 const age = document.getElementById("age");
-const ageValue = Number.parseInt(age.value, 10);
+const ageValue = Number.parseInt(age.value.trim(), 10);
 const job = document.getElementById("job");
 const introduction = document.getElementById("introduction");
 const result = document.getElementById("result");
