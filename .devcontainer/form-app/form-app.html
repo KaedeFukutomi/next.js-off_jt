@@ -11,28 +11,29 @@
     <section>
       <h1>アンケートフォーム</h1>
     </section>
-    <form id="surveyForm">
-      <div class="flexbox">
-        <label for="username">名前：</label>
-        <p id="error-username" class="error-message">名前を入力してください</p>
-        <input type="text" id="username"/>
+    <form id="survey-form">
+      <div class="flex-box-container">
+        <label for="user-name">名前：</label>
+          <p id="error-user-name" class="error-message">名前を入力してください</p>
+          <input type="text" id="user-name"/>
         <label for="age">年齢：</label>
-        <p id="error-age" class="error-message">年齢は18歳以下で入力してください</p>
-        <input type="text" id="age"/>
+          <p id="error-age" class="error-message">年齢は18歳以下で入力してください</p>
+          <input type="text" id="age"/>
         <label for="job" class="job">職業：</label>
-        <p id="error-job" class="error-message">プルダウンの中から職業を選択してください</p>
-        <select name ="job" id="job" class="job-select">
-        <option value="">選択してください</option>
-          <option>自営業</option>
-          <option>会社員</option>
-          <option>パート</option>
-          <option>アルバイト</option>
-          <option>学生</option>
-        </select>
+          <p id="error-job" class="error-message">プルダウンの中から職業を選択してください</p>
+          <select name ="job" id="job" class="job-select">
+          <option value="">選択してください</option>
+           <option>自営業</option>
+           <option>会社員</option>
+           <option>パート</option>
+           <option>アルバイト</option>
+           <option>学生</option>
+          </select>
         <label for="introduction">自己紹介：</label>
-        <input type="text" id="introduction" class="introduction"/>
+          <input type="text" id="introduction" class="introduction"/>
         <button type="submit" class="submit-button">送信</button>
       </div>
     </form>
   </body>
 </html>
+
