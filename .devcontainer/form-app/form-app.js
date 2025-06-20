@@ -35,5 +35,13 @@ form.addEventListener("submit", (event) => {
     introduction: introduction.value.trim(),
   };
 
+  if (import.meta.env.VITE_APP_ENV === "prod") {
+    console.log =
+      console.info =
+      console.debug =
+      console.warn =
+      console.error =
+        () => {};
+  }
   console.log("送信データ(JSON):", JSON.stringify(formData));
 });
