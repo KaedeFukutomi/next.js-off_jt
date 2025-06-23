@@ -28,11 +28,11 @@ form.addEventListener("submit", (event) => {
     hasError = true;
   }
 
-  const formData = {
-    userName: userName.value.trim(),
-    age: age.value.trim(),
-    job: job.value,
-    introduction: introduction.value.trim(),
-  };
-  console.log("送信データ(JSON):", JSON.stringify(formData));
+  // const formData = {
+  //   userName: userName.value.trim(),
+  //   age: age.value.trim(),
+  //   job: job.value,
+  //   introduction: introduction.value.trim(),
+  // };
+  // console.log("送信データ(JSON):", JSON.stringify(formData));
 });
