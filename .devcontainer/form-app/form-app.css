@@ -1,0 +1,21 @@
+.flexBoxContainer {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+.jobSelect {
+  height: 25px;
+}
+.introduction {
+  height: 60px;
+}
+.submitButton {
+  margin-top: 20px;
+  color: blue;
+}
+.errorMessage {
+  color: red;
+  font-size: 10px;
+  display: none;
+}
+
